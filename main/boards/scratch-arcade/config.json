@@ -1,0 +1,15 @@
+{
+  "target": "esp32s3",
+  "builds": [
+    {
+      "name": "scratch-arcade",
+      "sdkconfig_append": [
+        "CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y",
+        "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"main/boards/scratch-arcade/partitions_8M.csv\"",
+        "CONFIG_SR_WN_WN9_NIHAOXIAOZHI_TTS=",
+        "CONFIG_SR_WN_WN9_XIAOBINXIAOBIN_TTS=y",
+        "CONFIG_USE_REALTIME_CHAT=y"
+      ]
+    }
+  ]
+}

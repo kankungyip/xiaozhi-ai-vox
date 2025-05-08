@@ -50,6 +50,10 @@
 
         "VOLUME": "音量 ",
         "MUTED": "ミュートされています",
-        "MAX_VOLUME": "最大音量"
+        "MAX_VOLUME": "最大音量",
+
+        "BRIGHTNESS": "輝度 ",
+        "SLEEPING": "スリープモード",
+        "MAX_BRIGHTNESS": "最大輝度"
     }
 }

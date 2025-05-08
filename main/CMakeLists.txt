@@ -157,6 +157,8 @@ elseif(CONFIG_BOARD_TYPE_ESP_S3_LCD_EV_Board)
     set(BOARD_TYPE "esp-s3-lcd-ev-board")
 elseif(CONFIG_BOARD_TYPE_NULLLAB_AI_Vox)
     set(BOARD_TYPE "nulllab-ai-vox")
+elseif(CONFIG_BOARD_TYPE_Scratch_Arcade)
+    set(BOARD_TYPE "scratch-arcade")
 endif()
 file(GLOB BOARD_SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/boards/${BOARD_TYPE}/*.cc

@@ -51,6 +51,10 @@
 
         "VOLUME": "Volume ",
         "MUTED": "Muted",
-        "MAX_VOLUME": "Max volume"
+        "MAX_VOLUME": "Max volume",
+
+        "BRIGHTNESS": "Brightness ",
+        "SLEEPING": "Sleeping",
+        "MAX_BRIGHTNESS": "Max brightness"
     }
 }
