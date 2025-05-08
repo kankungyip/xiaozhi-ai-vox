@@ -5,10 +5,9 @@
 #include <cmath>
 #include <cstring>
 
-#include "audio_codecs/audio_codec.h"
-#include "sdkconfig.h"
+#include "audio_codecs/no_audio_codec.h"
 
-class AIVoxAudioCodec : public AudioCodec {
+class AIVoxAudioCodec : public NoAudioCodec {
   private:
     // ref buffer used for aec
     std::vector<int16_t> ref_buffer_;
@@ -168,28 +167,5 @@ class AIVoxAudioCodec : public AudioCodec {
     void SetOutputVolume(int volume) {
         output_volume_ = volume;
         AudioCodec::SetOutputVolume(volume);
-    }
-
-    void EnableInput(bool enable) {
-        if (enable == input_enabled_) {
-            return;
-        }
-        AudioCodec::EnableInput(enable);
-    }
-
-    void EnableOutput(bool enable) {
-        if (enable == output_enabled_) {
-            return;
-        }
-        AudioCodec::EnableOutput(enable);
-    }
-
-    ~AIVoxAudioCodec() {
-        if (rx_handle_ != nullptr) {
-            ESP_ERROR_CHECK(i2s_channel_disable(rx_handle_));
-        }
-        if (tx_handle_ != nullptr) {
-            ESP_ERROR_CHECK(i2s_channel_disable(tx_handle_));
-        }
     }
 };
