@@ -1,0 +1,13 @@
+{
+  "target": "esp32s3",
+  "builds": [
+    {
+      "name": "nulllab-ai-vox",
+      "sdkconfig_append": [
+        "CONFIG_USE_WECHAT_MESSAGE_STYLE=n",
+        "CONFIG_USE_AUDIO_PROCESSOR=y",
+        "CONFIG_USE_REALTIME_CHAT=n"
+      ]
+    }
+  ]
+}
