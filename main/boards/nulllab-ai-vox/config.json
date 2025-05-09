@@ -4,7 +4,7 @@
     {
       "name": "nulllab-ai-vox",
       "sdkconfig_append": [
-        "CONFIG_USE_REALTIME_CHAT=y"
+        "CONFIG_USE_DEVICE_AEC=y"
       ]
     }
   ]
