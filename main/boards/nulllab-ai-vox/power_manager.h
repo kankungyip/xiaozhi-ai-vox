@@ -24,7 +24,7 @@ class PowerManager {
     int ticks_ = 0;
     const int kBatteryAdcInterval = 60;
     const int kBatteryAdcDataCount = 3;
-    const int kLowBatteryLevel = 20;
+    const int kLowBatteryLevel = 10;
 
     adc_oneshot_unit_handle_t adc_handle_;
     adc_channel_t adc_channel_;
