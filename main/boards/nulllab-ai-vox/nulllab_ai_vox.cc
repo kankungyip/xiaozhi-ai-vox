@@ -5,7 +5,6 @@
 #include <driver/rtc_io.h>
 #include <esp_sleep.h>
 
-#include "ai_vox_audio_codec.h"
 #include "application.h"
 #include "assets/lang_config.h"
 #include "button.h"
@@ -13,10 +12,11 @@
 #include "display/lcd_display.h"
 #include "iot/thing_manager.h"
 #include "led/single_led.h"
-#include "power_manager.h"
 #include "power_save_timer.h"
-#include "system_reset.h"
 #include "wifi_board.h"
+
+#include "ai_vox_audio_codec.h"
+#include "power_manager.h"
 
 #define TAG "NulllabAIVox"
 
